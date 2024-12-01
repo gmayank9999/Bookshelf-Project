@@ -1,0 +1,334 @@
+* {  
+  margin: 0; /* Reset margin for all elements */  
+  padding: 0; /* Reset padding for all elements */  
+  box-sizing: border-box; /* Include padding and borders in element's total width */  
+}  
+
+html, body {  
+  width: 100%; /* Make sure the html and body cover the full width */  
+}  
+
+header {  
+  padding: 0; /* Removed padding to ensure full width */  
+  text-align: center;  
+  width: 100%; /* Ensures the header itself takes full width */  
+  font-family: "poppins";
+}  
+
+.header-top {  
+  display: flex;  
+  justify-content: center; /* Centering the logo */  
+  /* align-items: center;    */
+  width: 100%;   
+}  
+
+.logo-container {  
+  flex: 1; /* Makes the logo container flexible */  
+  text-align: center; /* Centers the logo textually */  
+}  
+
+.logo {  
+ flex:1;
+} 
+
+.header-links {  
+  display: flex;  
+  align-items: center;  
+  margin-left: auto; /* Pushes header links to the right */  
+  font-family: "poppins";
+}  
+
+.header-links a {  
+  margin-left: 15px;  
+  text-decoration: none;  
+  color: black;  
+}  
+.header-links a.login-button {
+  color: white; /* Override color for login button */
+}
+
+.header-links a.about-us {
+  font-weight: bold; /* Make "About Us" bold */
+  font-size: 20px;
+  
+}
+
+.login-button {  
+  background-color: #545DAB; /* Login button color */  
+  color: white; /* Button text color */  
+  padding: 10px 15px; /* Button padding */  
+  border: none; /* Remove default button border */  
+  border-radius: 5px; /* Rounded corners */  
+  transition: background-color 0.3s; /* Smooth color transition */ 
+  
+}  
+
+.login-button:hover {  
+  background-color: #3c529a; /* Darker shade on hover */  
+}  
+
+nav {  
+  background-color: #545DAB; /* Navbar color */  
+  padding: 25px 0; /* Height of the navbar */  
+  width: 100%; /* Ensure navbar spans the full width */  
+}  
+
+nav ul {  
+  list-style-type: none;  
+  padding: 0;  
+  display: flex;  
+  justify-content: center;  
+  width: 100%; /* Ensure the ul takes the full width */  
+}  
+
+nav ul li a{  
+  margin: 0 40px;  
+  color: white;  
+  font-size: 30px; /* Optional: increase font size for visibility */  
+  font-weight: bold;
+  text-decoration: none;
+}
+
+/* Overview section */  
+.overview {  
+  padding: 2rem;  
+  background-color: #545DAB;  
+  color: #fff;  
+  position: relative;  
+  text-align: center; /* Center the "Overview" heading */  
+   
+}  
+
+
+
+.overview-content {  
+  display: flex;  
+  justify-content: space-between;  
+  align-items: center;  
+  background-color: #fff;  
+  padding: 2rem;  
+  color: #333; /* Set the text color to dark gray */  
+  font-size: 24px; ;
+}  
+
+.overview-text {  
+  flex: 1;  
+  margin-right: 2rem; 
+  
+}  
+
+
+.overview-image img {  
+  max-width: 100%;  
+  height: auto;  
+}
+
+
+
+/* Contact Us section */  
+.contact {  
+  padding: 2rem;  
+  background-color: #545DAB;  
+  position: relative;
+    
+}  
+
+.contact-content {  
+  display: flex;  
+  justify-content: space-between;  
+  align-items: center;  
+  background-color: #fff;  
+  padding: 2rem;  
+  
+}  
+
+.contact-image {  
+  flex: 1;  
+  margin-right: 2rem;  
+}  
+
+.contact-image img {  
+  max-width: 100%;  
+  height: auto;  
+}  
+
+.contact-text {  
+  flex: 1;  
+  font-size: 24px;  
+  
+
+}  
+.contact::before {  
+  content: "Contact Us";  
+  position: absolute;  
+  top: -1rem;  
+  left: 50%;  
+  transform: translateX(-50%);  
+  background-color: #545DAB;  
+  color: #fff;  
+  padding: 1rem 2rem;  
+  text-align: center;  
+  font-size: 30px;  
+  margin: 0;  
+  font-size:30;
+}  
+
+.contact-info {  
+  display: flex;  
+  align-items: center;  
+  margin-bottom: 1rem;  
+}  
+
+
+.contact-icon {  
+  width: 30px;  
+  height: 30px;  
+  margin-right: 1rem;  
+}  
+
+.contact .ribbon {  
+  background-color: #545DAB;  
+  color: #fff;  
+  padding: 1rem 2rem;  
+  text-align: center;  
+  position: absolute;  
+  top: -1rem;  
+  left: 50%;  
+  transform: translateX(-50%);  
+}  
+
+.contact .ribbon h2 {  
+  font-size: 2rem;  
+  margin: 0;  
+}  
+.contact-address {
+  margin-right: 17px; /* Add a gap of 10px (approximately one spacebar) */
+}
+/* Global styles */  
+body {  
+  font-family: Arial, sans-serif;  
+  font-size: 16px;  
+  line-height: 1.5;  
+  color: #333;  
+  margin: 0;  
+}  
+
+/* Footer section */  
+.footer {  
+  display: flex;  
+  justify-content: space-between;  
+  align-items: center;  
+  padding: 20px;  
+  background-color: #EBEAEA; /* Background color */  
+}  
+
+.footer-content {  
+  display: flex;  
+  width: 100%;  
+  max-width: 1200px; /* Adjust max width as needed */  
+  margin: 0 auto;  
+ 
+}  
+
+.footer-left {  
+  flex: 1;
+  font-family: "poppins" ;  
+}  
+
+.footer-text {  
+  flex: 1;  
+}  
+
+.social-links {  
+  display: flex;  
+  align-items: center;  
+}  
+
+.social-icons a {  
+   
+  .social-icons {
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap; /* Add this property to prevent wrapping */
+    gap: 10px; /* Add this property to set the gap between icons */
+  } 
+}  
+
+.social-icons img {  
+  width: 50px;  
+  height: 30px;  
+  margin-right:10px
+}
+/* Footer Section */
+.footer {  
+  display: flex;  
+  justify-content: space-between;  
+  align-items: center;  
+  padding: 20px;  
+  background-color: #EBEAEA; /* Background color */  
+}  
+
+.footer-content {  
+  display: flex;  
+  width: 100%;  
+  max-width: 1200px; /* Adjust max width as needed */  
+  margin: 0 auto;  
+ 
+}  
+
+.footer-left {  
+  flex: 1;
+  font-family: "poppins" ;  
+}  
+
+.social-icons {  
+  display: flex;  
+  flex: center;
+  justify-content: flex-start; 
+  align-items: center;  
+}  
+
+.social-icons a {  
+  margin-left: 0px 0;  
+}  
+
+.social-icons img {  
+  width: 30px;  
+  height: 30px;  
+}
+
+.footer-right {  
+  flex: 1;
+  text-align: right; /* Align text to the right */  
+  text-decoration: none;
+}  
+
+.footer-right a{
+  text-decoration: none;
+  color: #000000;
+  font-weight: bold;
+}
+
+.footer-right h2 {  
+  font-size: 1.5rem; /* Adjust size as needed */  
+}  
+
+.footer-right ul {  
+  list-style: none;  
+  padding: 0;  
+}  
+
+.footer-right li {  
+  margin: 15px 0; /* Space between links */  
+}  
+
+.footer-image {  
+  flex: 1;  
+  text-align: right; /* Align image to the right */  
+}  
+
+.footer-image img {  
+  width: 400px; /* Adjust image size */  
+  height: 200px;
+}
+

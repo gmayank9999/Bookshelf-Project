@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookshelf</title>
+    <link rel="stylesheet" href="/Podcasts/static/pod.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <%- include('../partials/header.ejs') %>
+
+    <section class="const-disrupt-section">
+        <div class="text-content" style="font-family: poppins;">
+            <h1>Let's Explore</h1>
+            <h2>The Construction Disruption Podcast</h2>
+            <p >Weekly conversations with forward thinkers at the forefront of this $1.6 Trillion industry</p>
+            <button class="episodes-btn">Episodes Soon!!</button>
+        </div>
+        <div>
+            <img src="/Podcasts/static/Construction Disrution Image.png " alt="Construction Disruption">
+        </div>
+    </section>
+
+    <section class="advertisement">
+        <div class="ad-text">
+            <img src="/Podcasts/static/Cool text image.png" alt="Find a listen for every moment">
+            <p>You can enjoy uninterrupted music for any occasion without any annoying ads.</p>
+            <a href="#featured-podcasts"><button class="listen-now-btn">Listen Now</button></a>
+        </div>
+        <div class="ad-image">
+            <img src="/Podcasts/static/Melody Matrix.png" alt="Melody Matrix">
+        </div>
+    </section>
+
+
+    <section class="featured-podcasts" id="featured-podcasts">
+        <hr>
+        <h2>Featured Podcasts</h2>
+        <p class="start-listening-today">Start listening today</p>
+        <div class="podcast-grid" id="podcast-grid">
+
+            <!-- Repeat the podcast cards below for each podcast -->
+            <!-- <div class="podcast-card">
+                <img src="Fall in peace with me.png" alt="Podcast Cover">
+                <h3>Fall in Peace with me</h3>
+                <p style="color:gray;">Playlist - Taylor Swift, Selena Gomez</p>
+                <div class="controls">
+                    <a href="#"><img src="play_icon.png" width="30" height="30"></a>
+                    <a href="#"><img src="share_icon.png" width="30" height="30"></a>          
+                </div>
+            
+            <div class="podcast-card">
+                <img src="Fall in peace with me.png" alt="Podcast Cover">
+                <h3>Fall in Peace with me</h3>
+                <p style="color:gray;">Playlist - Taylor Swift, Selena Gomez</p>
+                <div class="controls">
+                    <a href="#"><img src="play_icon.png" width="30" height="30"></a>
+                    <a href="#"><img src="share_icon.png" width="30" height="30"></a>          
+                </div>
+            </div> -->
+
+            <!-- Podcast cards will be injected here dynamically -->
+            
+        </div>
+    </section>
+
+<!-- Footer Section -->
+
+
+<%- include('../partials/footer.ejs') %>
+
+<script src="/Podcasts/static/script.js"></script>
+</body>
+</html>

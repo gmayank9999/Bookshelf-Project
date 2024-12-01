@@ -1,0 +1,315 @@
+* {  
+    margin: 0; /* Reset margin for all elements */  
+    padding: 0; /* Reset padding for all elements */  
+    box-sizing: border-box; /* Include padding and borders in element's total width */  
+}  
+
+html, body {  
+    width: 100%; /* Make sure the html and body cover the full width */  
+    scroll-behavior: smooth;
+}  
+
+header {  
+    padding: 0; /* Removed padding to ensure full width */  
+    text-align: center;  
+    width: 100%; /* Ensures the header itself takes full width */  
+    font-family: "poppins";
+}  
+
+.header-top {  
+    display: flex;  
+    justify-content: center; /* Centering the logo */  
+    align-items: center;   
+    width: 100%;   
+}  
+
+.logo-container {  
+    flex: 1; /* Makes the logo container flexible */  
+    text-align: center; /* Centers the logo textually */  
+}  
+
+.logo {  
+    max-height: 80px; /* Adjust the maximum height of the logo */  
+    width: auto; /* Maintain aspect ratio */  
+}  
+
+.header-links {  
+    display: flex;  
+    align-items: center;  
+    margin-left: auto; /* Pushes header links to the right */  
+    font-family: "poppins";
+}  
+
+.header-links a {  
+    margin-left: 15px;  
+    text-decoration: none;  
+    color: black;  
+}  
+.header-links a.login-button {
+    color: white; /* Override color for login button */
+}
+  
+.header-links a.about-us {
+    font-weight: bold; /* Make "About Us" bold */
+    font-size: 20px;
+    
+}
+
+.login-button {  
+    background-color: #545DAB; /* Login button color */  
+    color: white; /* Button text color */  
+    padding: 10px 15px; /* Button padding */  
+    border: none; /* Remove default button border */  
+    border-radius: 5px; /* Rounded corners */  
+    transition: background-color 0.3s; /* Smooth color transition */ 
+    
+}  
+
+.login-button:hover {  
+    background-color: #3c529a; /* Darker shade on hover */  
+}  
+
+nav {  
+    background-color: #545DAB; /* Navbar color */  
+    padding: 25px 0; /* Height of the navbar */  
+    width: 100%; /* Ensure navbar spans the full width */  
+}  
+
+nav ul {  
+    list-style-type: none;  
+    padding: 0;  
+    display: flex;  
+    justify-content: center;  
+    width: 100%; /* Ensure the ul takes the full width */  
+}  
+
+nav ul li a{  
+    margin: 0 40px;  
+    color: white;  
+    font-size: 30px; /* Optional: increase font size for visibility */  
+    font-weight: bold;
+    text-decoration: none;
+}
+
+
+.const-disrupt-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+    background-color: #f5f5f5;
+    
+}
+
+.const-disrupt-section .text-content {
+    max-width: 40%;
+}
+
+.const-disrupt-section h1 {
+    margin-bottom: 30px;
+    
+}
+.const-disrupt-section h2 {
+    color: #000000;
+    font-size: 50px;
+    margin-bottom: 30px;
+    
+}
+
+.const-disrupt-section button {
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 20px;
+    cursor: pointer;
+    border-radius: 12px;
+    margin-left: 150px;
+    font-size: large;
+}
+
+.advertisement {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 50px;
+    background-color: #161d41;
+    color: white;
+}
+.advertisement .ad-text{
+    text-align: center;
+}
+
+.advertisement .ad-text img{
+    width: 100%;
+    height: 250px;
+    margin-bottom: 10px;
+}
+
+.advertisement .ad-text p {
+    margin-top: 2px;
+    font-size: 1.2rem;
+    max-width: 500px;
+    
+}
+
+.advertisement .ad-image img {
+    max-width: 100%;
+}
+
+.advertisement .listen-now-btn {
+    background-color: #3b44f6; /* Replace with the exact button background color */
+    color: white;
+    border: none;
+    padding: 12px 30px; /* Adjust padding for size */
+    font-size: 1.2rem; /* Adjust font size to make it larger */
+    font-weight: bold;
+    border-radius: 25px; /* Makes the button rounded */
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out; /* For smooth hover effects */
+    margin-top: 30px;
+}
+
+.advertisement .listen-now-btn:hover {
+    background-color: #2d36d1; /* Slightly darker shade for hover effect */
+}
+
+
+.featured-podcasts {
+    padding: 50px;
+    background-color: #f5f5f5;
+    text-align: center;
+}
+
+.featured-podcasts h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    
+}
+/* .featured-podcasts p{
+    margin-right: 10px;
+} */
+.featured-podcasts .start-listening-today {
+    font-size: 1.5rem; /* Adjust the size according to the screenshot */
+    font-weight: bold; 
+    color: #8F6724; /* Set the color to match the red-orange hue in the screenshot */
+    margin-bottom: 20px; /* Add some space between the text and the podcast items */
+    text-align: left; /* Aligns the text to the left */
+    margin-left: 10px; /* Adjust the left margin to align it with the podcasts section */
+}
+
+.featured-podcasts .podcast-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.podcast-card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    border: 1px solid #ccc;
+    margin: 16px;
+    width: 300px;
+    position: relative;
+    height: 370px; /* Adjust to ensure enough spacing*/
+    min-height: 370px;
+
+
+
+
+}
+
+.podcast-card img {
+    width: 100%;
+    height: auto;
+    min-height: 200px;
+    border-radius: 10px;
+    max-height: 200px;
+}
+
+.podcast-card .controls {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+}
+
+.audio-controls {
+    margin-top: 10px;
+}
+
+audio {
+   
+    margin-top: 10px;
+    position: absolute;
+    bottom: 7px; /* Adjust spacing from the bottom edge */
+    left: 16px; /* Adjust spacing from the left edge */
+    width: calc(100% - 32px); /* Full width minus padding */
+   
+}
+
+
+/* Footer Section */
+.footer {  
+    display: flex;  
+    justify-content: space-between;  
+    align-items: center;  
+    padding: 20px;  
+    background-color: #ffffff; /* Background color */  
+}  
+
+.footer-content {  
+    display: flex;  
+    width: 100%;  
+    max-width: 1200px; /* Adjust max width as needed */  
+    margin: 0 auto;  
+}  
+
+.footer-left {  
+    flex: 1;
+    font-family: "poppins" ;  
+}  
+
+.social-icons {  
+    margin: 10px 0;  
+}  
+
+.social-icons img {  
+    width: 30px; /* Adjust icon size */  
+    margin-right: 10px; /* Space between icons */  
+}  
+
+.footer-right {  
+    flex: 1;  
+    text-align: right; /* Align text to the right */  
+}  
+
+.footer-right h2 {  
+    font-size: 1.5rem; /* Adjust size as needed */  
+}  
+
+.footer-right ul {  
+    list-style: none;  
+    padding: 0;  
+}  
+
+.footer-right li {  
+    margin: 15px 0; /* Space between links */  
+    
+}  
+.footer-right li a{
+    text-decoration: none;
+    color: black;
+}
+
+.footer-image {  
+    flex: 1;  
+    text-align: right; /* Align image to the right */  
+}  
+
+.footer-image img {  
+    width: 400px; /* Adjust image size */  
+    height: 200px;  
+}

@@ -1,0 +1,249 @@
+* {  
+    margin: 0; /* Reset margin for all elements */  
+    padding: 0; /* Reset padding for all elements */  
+    box-sizing: border-box; /* Include padding and borders in element's total width */  
+}  
+
+html, body {  
+    width: 100%; /* Make sure the html and body cover the full width */  
+    scroll-behavior: smooth;
+}  
+
+header {  
+    padding: 0; /* Removed padding to ensure full width */  
+    text-align: center;  
+    width: 100%; /* Ensures the header itself takes full width */  
+    font-family: "poppins";
+}  
+
+.header-top {  
+    display: flex;  
+    justify-content: center; /* Centering the logo */  
+    align-items: center;   
+    width: 100%;   
+}  
+
+.logo-container {  
+    flex: 1; /* Makes the logo container flexible */  
+    text-align: center; /* Centers the logo textually */  
+}  
+
+.logo {  
+    max-height: 80px; /* Adjust the maximum height of the logo */  
+    width: auto; /* Maintain aspect ratio */  
+}  
+
+.header-links {  
+    display: flex;  
+    align-items: center;  
+    margin-left: auto; /* Pushes header links to the right */  
+    font-family: "poppins";
+}  
+
+.header-links a {  
+    margin-left: 15px;  
+    text-decoration: none;  
+    color: black;  
+}  
+.header-links a.login-button {
+    color: white; /* Override color for login button */
+}
+  
+.header-links a.about-us {
+    font-weight: bold; /* Make "About Us" bold */
+    font-size: 20px;
+    
+}
+
+.login-button {  
+    background-color: #545DAB; /* Login button color */  
+    color: white; /* Button text color */  
+    padding: 10px 15px; /* Button padding */  
+    border: none; /* Remove default button border */  
+    border-radius: 5px; /* Rounded corners */  
+    transition: background-color 0.3s; /* Smooth color transition */ 
+    
+}  
+
+.login-button:hover {  
+    background-color: #3c529a; /* Darker shade on hover */  
+}  
+
+nav {  
+    background-color: #545DAB; /* Navbar color */  
+    padding: 25px 0; /* Height of the navbar */  
+    width: 100%; /* Ensure navbar spans the full width */  
+}  
+
+nav ul {  
+    list-style-type: none;  
+    padding: 0;  
+    display: flex;  
+    justify-content: center;  
+    width: 100%; /* Ensure the ul takes the full width */  
+}  
+
+nav ul li a{  
+    margin: 0 40px;  
+    color: white;  
+    font-size: 30px; /* Optional: increase font size for visibility */  
+    font-weight: bold;
+    text-decoration: none;
+}
+
+/* Cart Section */
+.cart-section {
+    padding: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.cart-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.cart-items {
+    width: 60%;
+}
+
+.cart-item {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 20px;
+    background-color: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.cart-item img {
+    width: 100px;
+    height: 150px;
+    object-fit: cover;
+}
+
+.item-details {
+    flex-grow: 1;
+}
+
+.quantity input {
+    width: 50px;
+    margin-left: 10px;
+}
+
+/* Summary Section */
+.cart-summary {
+    width: 30%;
+    background-color: #D9D9D9;
+    padding: 20px;
+    border-radius: 30px;
+    box-shadow: 0 0 5px rgba(46, 41, 41, 0.1);
+    font-size: 20px;
+    margin: 0;
+    padding-top: 0 ;
+    
+}
+
+.summary-details p {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0;
+    font-family: "abhaya libre";
+    
+}
+
+.Shop{
+    font-style: "Raleway";
+    font-weight: bold;
+}
+
+.text_summary{
+    font-style: "Raleway";
+    margin-bottom: 0;
+}
+
+.payment-options input {
+    margin-right: 10px;
+}
+
+.checkout-button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #4a4a9a;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 100px;
+}
+.buttona{
+    text-decoration: none;
+}
+
+
+/* Footer Section */
+.footer {  
+    display: flex;  
+    justify-content: space-between;  
+    align-items: center;  
+    padding: 20px;  
+    background-color: #ffffff; /* Background color */  
+}  
+
+.footer-content {  
+    display: flex;  
+    width: 100%;  
+    max-width: 1200px; /* Adjust max width as needed */  
+    margin: 0 auto;  
+}  
+
+.footer-left {  
+    flex: 1;
+    font-family: "poppins" ;  
+}  
+
+.social-icons {  
+    margin: 10px 0;  
+}  
+
+.social-icons img {  
+    width: 30px; /* Adjust icon size */  
+    margin-right: 10px; /* Space between icons */  
+}  
+
+.footer-right {  
+    flex: 1;  
+    text-align: right; /* Align text to the right */  
+}  
+
+.footer-right h2 {  
+    font-size: 1.5rem; /* Adjust size as needed */  
+}  
+
+.footer-right ul {  
+    list-style: none;  
+    padding: 0;  
+}  
+
+.footer-right li {  
+    margin: 15px 0; /* Space between links */  
+    
+}  
+.footer-right li a{
+    text-decoration: none;
+    color: black;
+}
+
+.footer-image {  
+    flex: 1;  
+    text-align: right; /* Align image to the right */  
+}  
+
+.footer-image img {  
+    width: 400px; /* Adjust image size */  
+    height: 200px;  
+}

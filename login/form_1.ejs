@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookshelf Login</title>
+    <link rel="stylesheet" href="/login/static/login.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header with Logo -->
+        <div class="header">
+            <a href="/landing page"><img src="bookshelf-logo.png" alt="Bookshelf Logo" class="logo"></a>
+        </div>
+
+        <!-- Login Box -->
+        <div class="signup-box">
+            <!-- Left Section with Image -->
+            <div class="left-section">
+                <img src="/login/static/Door Image.png" alt="Illustration" class="illustration">
+            </div>
+
+            <!-- Right Section with Form -->
+            <div class="right-section">
+                <div class="form-container">
+                    <h2>Welcome to Bookshelf</h2>
+                    <div class="input-group">
+                        <input type="text" id="email" placeholder="Enter e-mail">
+                    </div>
+                    <div class="input-group">
+                        <input type="password" id="password" placeholder="Enter Password">
+                    </div>
+                    <button class="signup-btn" id="login-btn">Log in</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+    document.getElementById('login-btn').addEventListener('click', async () => {
+        const email = document.getElementById('email').value;
+        const password = document.getElementById('password').value;
+    
+        if (!email || !password) {
+            alert("Please fill in all fields.");
+            return;
+        }
+    
+        try {
+            const response = await fetch('http://localhost:5000/api/users/login', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({ email, password }),
+            });
+    
+            const data = await response.json();
+    
+            if (response.ok) {
+                alert("Login successful!");
+                // Redirect to another page, e.g., the dashboard
+                window.location.href = '/';
+            } else {
+                alert(data.error || "Invalid login credentials.");
+            }
+        } catch (error) {
+            console.error('Error:', error);
+            alert('Something went wrong. Please try again.');
+        }
+    });
+    </script>
+</body>
+</html>

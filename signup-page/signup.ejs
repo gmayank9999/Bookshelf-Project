@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookshelf Signup</title>
+    <link rel="stylesheet" href="/signup-page/static/signup.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header with Logo -->
+        <div class="header">
+            <a href="../landing page/landing.html">
+                <img src="bookshelf-logo.png" alt="Bookshelf Logo" class="logo">
+            </a>
+        </div>
+
+        <!-- Signup Box -->
+        <div class="signup-box">
+            <!-- Left Section with Image -->
+            <div class="left-section">
+                <img src="/signup-page/static/Door Image.png" alt="Illustration" class="illustration">
+            </div>
+
+            <!-- Right Section with Form -->
+            <div class="right-section">
+                <div class="form-container">
+                    <h2>Welcome to Bookshelf</h2>
+                    <form id="signup-form" method="POST">
+                        <div class="input-group">
+                            <input type="text" name="email" placeholder="Enter e-mail" required>
+                        </div>
+                        <div class="input-group">
+                            <input type="password" name="password" placeholder="Set Password" required>
+                        </div>
+                        <button type="submit" class="signup-btn">Sign Up</button>
+                    </form>
+                </div>
+                <br>
+                <a href="/login">Already have an account? Login</a>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const signupForm = document.getElementById('signup-form');
+
+        signupForm.addEventListener('submit', async (e) => {
+            e.preventDefault();
+
+            const formData = new FormData(signupForm);
+            const email = formData.get('email');
+            const password = formData.get('password');
+
+            try {
+                const response = await fetch('http://localhost:5000/api/users/signup', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify({ email, password }),
+                });
+
+                const data = await response.json();
+                if (response.ok) {
+                    alert(data.message);
+                    window.location.href = '/login'; // Redirect to login page
+                } else {
+                    alert(data.error);
+                }
+            } catch (error) {
+                console.error('Error:', error);
+                alert('Something went wrong. Please try again.');
+            }
+        });
+    </script>
+</body>
+</html>

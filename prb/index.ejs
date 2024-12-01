@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="static/styles.css">
+    <title>Bookshelf</title>
+</head>
+
+<body>
+    <!-- Header Section -->
+    <%- include('../partials/header.ejs') %>
+
+    <main>
+        <div class="image-container">
+            <h1 class="category-title">Browse your Category</h1>
+            <h2 class="sub-title">Pre-loved Books</h2>
+        </div>
+
+        <!-- Dynamic Book Container -->
+        <div id="book-container"></div>
+    </main>
+
+    <%- include('../partials/footer.ejs') %>
+
+    <!-- Link to the JavaScript file -->
+    <script src="static/prb.js"></script>
+</body>
+
+</html>

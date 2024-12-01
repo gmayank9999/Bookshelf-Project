@@ -1,0 +1,29 @@
+[
+    {
+        "category": "Thriller",
+        "books": [
+            { "id": "thriller-1", "title": "Grave Secrets", "price": 315, "image": "static/Grave streets.png" },
+            { "id": "thriller-2", "title": "Come A Little Closer", "price": 249, "image": "static/come a little closer.png" },
+            { "id": "thriller-3", "title": "Gone Girl", "price": 265, "image": "static/gone girl.png" },
+            { "id": "thriller-4", "title": "A Stranger in the House", "price": 151, "image": "static/A stranger in the house.png" }
+        ]
+    },
+    {
+        "category": "Comedy",
+        "books": [
+            { "id": "comedy-1", "title": "The Temporary Roomie", "price": 245, "image": "static/Temporary room.png" },
+            { "id": "comedy-2", "title": "The Psychology of Comedy", "price": 265, "image": "static/comedy.png" },
+            { "id": "comedy-3", "title": "Suddenly Single", "price": 285, "image": "static/suddenly single.png" },
+            { "id": "comedy-4", "title": "Before I Do", "price": 265, "image": "static/Before i do.png" }
+        ]
+    },
+    {
+        "category": "Horror",
+        "books": [
+            { "id": "horror-1", "title": "A Demon Risen", "price": 265, "image": "static/Demon risen.png" },
+            { "id": "horror-2", "title": "Hanging House", "price": 265, "image": "static/Hanging house.png" },
+            { "id": "horror-3", "title": "Something Evil is Watching", "price": 265, "image": "static/Somethind is watching u in the mirror.png" },
+            { "id": "horror-4", "title": "Those Eyes", "price": 265, "image": "static/those eyes.png" }
+        ]
+    }
+]

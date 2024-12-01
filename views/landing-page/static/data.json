@@ -1,0 +1,59 @@
+{
+    "books": [
+      {
+        "id": 1,
+        "title": "Grave Secrets",
+        "price": 315,
+        "image": "/views/landing-page/static/Grave streets.png"
+      },
+      {
+        "id": 2,
+        "title": "Come A Little Closer",
+        "price": 249,
+        "image": "/views/landing-page/static/come a little closer.png"
+      },
+      {
+        "id": 3,
+        "title": "Gone Girl",
+        "price": 265,
+        "image": "/views/landing-page/static/gone girl.png"
+      },
+      {
+        "id": 4,
+        "title": "A Stranger in the House",
+        "price": 265,
+        "image": "/views/landing-page/static/A stranger in the house.png"
+      }
+    ],
+    "podcasts": [
+      {
+        "id": 1,
+        "title": "Calm",
+        "image": "/views/landing-page/static/Fall in peace with me.png",
+        "playlist": "A relaxing playlist featuring Taylor Swift and Selena Gomez.",
+        "audio": "/views/landing-page/static/The Most Eye Opening 10 Minutes Of Your Life  David Goggins.mp3"
+      },
+      {
+        "id": 2,
+        "title": "Fall in Peace with me",
+        "image": "/views/landing-page/static/Fall in peace with me.png",
+        "playlist": "A relaxing playlist featuring Taylor Swift and Selena Gomez.",
+        "audio": "/views/landing-page/static/The Most Eye Opening 10 Minutes Of Your Life  David Goggins.mp3"
+      },
+      {
+        "id": 3,
+        "title": "Fall in Peace with me",
+        "image": "/views/landing-page/static/Fall in peace with me.png",
+        "playlist": "A relaxing playlist featuring Taylor Swift and Selena Gomez.",
+        "audio": "/views/landing-page/static/The Most Eye Opening 10 Minutes Of Your Life  David Goggins.mp3"
+      },
+      {
+        "id": 4,
+        "title": "Fall in Peace with me",
+        "image": "/views/landing-page/static/Fall in peace with me.png",
+        "playlist": "A relaxing playlist featuring Taylor Swift and Selena Gomez.",
+        "audio": "/views/landing-page/static/The Most Eye Opening 10 Minutes Of Your Life  David Goggins.mp3"
+      }
+    ]
+  }
+  

@@ -1,0 +1,95 @@
+<!DOCTYPE html>  
+<html lang="en">  
+<head>  
+    <meta charset="UTF-8">  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <link rel="stylesheet" href="/seller-form/static/styles.css">  
+    
+</head>  
+<body background="/seller-form/static/image-removebg-preview (50) 1.png" class="bg-img">  >  
+<!-- Header Section -->
+ <!-- Header Section -->
+ <%- include('../partials/header.ejs') %>
+
+
+    <main>  
+        <section class="quote-request">  
+            <h2 style="color:darkolivegreen;">Sell With Us</h2>  
+            <p style="color:chocolate">“Turn Your Passion for Books 
+                into Profit Register Now 
+                and Start Your Selling Journey!”</p>  
+            
+             <form name="submit-to-google-sheet">  <!--form name ko notice kro -->
+                
+                <input type="text" name="full-name" placeholder="Your Name" required>  
+
+                
+                <input type="number" name="mobile-number" placeholder="Your Phone Number" required>  
+
+               
+                <input type="text" name="state" placeholder="Your State" required>  
+
+                  
+                <input type="text" name="city" placeholder="Your City" required>  
+
+                  
+                <input type="text" name="isbn-title" placeholder="ISBN Number">  
+
+                
+                <input type="text" name="author" placeholder="Author Name" required>
+
+                
+                <input type="text" name="genre" placeholder="Book's Genre" required>
+
+                <label name="condition">Condition:</label>  
+                <select name="condition" id="">
+                    <option value="new">New</option>
+                    <option value="good">Good</option>
+                    <option value="like-new">Like New</option>
+                    <option value="Acceptable">Acceptable</option>
+                </select>
+
+                
+                <input type="number" name="price" placeholder="Price" required>
+
+                
+                <textarea name="description" rows="4" placeholder="Please leave a description of the book!"></textarea>  
+
+                 
+                <textarea name="shipping-info" rows="4" placeholder="Please enter the shipping information and address"></textarea>  
+
+
+
+
+                <a href="../Thankyou request sent/index.html"><button class="submit-btn">Submit</button> </a>
+            </form>  
+        </section>  
+    </main>  
+
+    <!-- Footer Section -->
+    <%- include('../partials/footer.ejs') %>
+
+    <script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbwtKn96cYlmbJBq-oEyYwjMtdGp6JzcELb5Yyq1UZ5YgEsG1CTAfEQLWtthROrm1UQV/exec'
+  const form = document.forms['submit-to-google-sheet'] // it is same as form ka name 
+  
+  form.addEventListener('submit',e =>{
+    e.preventDefault()
+    fetch(scriptURL, {method: 'POST', body: new FormData(form)})
+    .then(response =>{
+        alert("Form Succesfully Submitted")  
+        
+        
+    })
+  })
+
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => console.log('Success!', response))
+      .catch(error => console.error('Error!', error.message))
+  })
+</script>
+    
+</body>  
+</html>
